@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+//druk - oswald, helvetica - robot, narrow arial - narrow achivo
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+::selection {
+  background-color: #fff;
+  color: #000;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: inherit; /* Inherits the color from the parent element */
+  text-decoration: none; /* Removes the default underline */
+  cursor: pointer; /* Ensures the cursor remains a pointer, even if other styles change it */
+  /* You might also want to reset other properties depending on your needs */
+  /* For example, to remove any default padding or margin: */
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 96.1%;
+  max-width: 1384px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
