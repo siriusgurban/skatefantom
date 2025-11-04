@@ -48,6 +48,11 @@ a {
   display: flex;
 }
 
+
+.section_padding{
+  padding: 120px 0;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

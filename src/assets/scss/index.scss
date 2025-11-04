@@ -5,7 +5,8 @@
 @use "./components/header";
 @use "./components/footer";
 @use "./components/loader";
-@use "./components/card";
+@use "./components/card_fresh";
+@use "./components/card_spin";
 
 
 // Pages
@@ -20,3 +21,4 @@
 @use "./pages/home/hero";
 @use "./pages/home/shell-shock";
 @use "./pages/home/fresh";
+@use "./pages/home/spin";

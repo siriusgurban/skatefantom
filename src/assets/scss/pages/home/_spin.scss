@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+
+.spin {
+  background-color: $black;
+  .container {
+    .row {
+      flex-direction: column;
+      .spin_title {
+        display: flex;
+        h2 {
+          font-size: 160px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: -5px;
+          color: $white;
+          line-height: 64px;
+          color: $yellow;
+        }
+        p {
+          transform: rotate(-30deg);
+          color: $white;
+          font-size: 64px;
+          text-transform: uppercase;
+          font-family: "Narrow Achivo";
+        }
+      }
+    }
+  }
+}

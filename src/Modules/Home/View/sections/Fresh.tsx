@@ -1,8 +1,8 @@
-import Card from "../../../../components/Card";
+import Card from "../../../../components/CardFresh";
 
 function Fresh() {
   return (
-    <section id="fresh" className="fresh">
+    <section id="fresh" className="fresh section_padding">
       <div className="container">
         <div className="row">
           <h2 className="title_top">Fresh Ink,</h2>

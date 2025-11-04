@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Card({
+function CardFresh({
   id,
   imgUrl,
   title,
@@ -24,4 +24,4 @@ function Card({
   );
 }
 
-export default Card;
+export default CardFresh;
