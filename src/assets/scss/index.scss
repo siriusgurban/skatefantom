@@ -5,9 +5,7 @@
 @use "./components/header";
 @use "./components/footer";
 @use "./components/loader";
-@use "./components/car-card";
-@use "./components/shop-card";
-@use "./components/custom-modal";
+@use "./components/card";
 
 
 // Pages
@@ -19,5 +17,6 @@
 @use "./pages/cart";
 
 // Sections
-@use "./pages/hero";
-@use "./pages/our-cars";
+@use "./pages/home/hero";
+@use "./pages/home/shell-shock";
+@use "./pages/home/fresh";

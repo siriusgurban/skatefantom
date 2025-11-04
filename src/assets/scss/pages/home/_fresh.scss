@@ -1,0 +1,40 @@
+@use "../../variables" as *;
+
+.fresh {
+  padding: 120px 0;
+  background-color: $blue;
+  .container {
+    .row {
+      flex-direction: column;
+      gap: 60px;
+      .title_top {
+        font-size: 120px;
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+        letter-spacing: -4px;
+        color: $black;
+      }
+
+      .box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .title_bottom {
+        font-size: 120px;
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+        letter-spacing: -4px;
+        text-align: right;
+        color: $black;
+      }
+
+
+    }
+  }
+}

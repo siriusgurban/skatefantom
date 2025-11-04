@@ -1,0 +1,27 @@
+.shellShock {
+  position: relative;
+  top: 0;
+  left: 0;
+  .ss_btn {
+    width: 100%;
+    display: block;
+    .ss_thumb {
+      width: 100vw;
+    }
+
+    .ss_play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+  }
+
+  .ss_iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+  }
+}

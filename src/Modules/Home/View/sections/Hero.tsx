@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section className="heroSection">
       <div className="row">
-        <Swiper
+        {/* <Swiper
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
@@ -28,7 +28,7 @@ const Hero = () => {
           className="mySwiper"
         >
           <p>Hero</p>
-        </Swiper>
+        </Swiper> */}
       </div>
     </section>
   );

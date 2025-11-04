@@ -1,4 +1,5 @@
 // Sections
+import Fresh from "./sections/Fresh";
 import Hero from "./sections/Hero";
 import ShellShock from "./sections/ShellShock";
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <main>
       <Hero />
       <ShellShock />
+      <Fresh />
     </main>
   );
 };
