@@ -1,0 +1,10 @@
+@use "../../variables" as *;
+
+.sign {
+  background-color: $black;
+  .container {
+    .row {
+      flex-direction: column;
+    }
+  }
+}
