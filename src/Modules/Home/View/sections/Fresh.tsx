@@ -33,7 +33,6 @@ function Fresh() {
               price={9.69}
             />
           </div>
-
           <h2 className="title_bottom">Fresh looks.</h2>
         </div>
       </div>

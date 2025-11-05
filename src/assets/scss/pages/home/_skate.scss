@@ -1,36 +1,36 @@
 @use "../../variables" as *;
 
-.spin {
-  background-color: $black;
+.skate {
+  background-color: $yellow;
   .container {
     .row {
       flex-direction: column;
       gap: 64px;
-      .spin_title {
+      .skate_title {
         display: flex;
         align-items: center;
         gap: 40px;
         h2 {
           font-size: 160px;
-          line-height: 160px;
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: -5px;
-          color: $yellow;
+          color: $white;
+          line-height: 160px;
+          color: $black;
         }
         p {
-          transform: rotate(-10deg);
-          color: $white;
+          transform: rotate(10deg);
+          color: $black;
           font-size: 64px;
           text-transform: uppercase;
           font-family: "Narrow Achivo";
         }
       }
-      .spin_box {
+      .skate_box {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 40px;
+        justify-content: space-between;
         width: 100%;
         height: 100%;
       }
@@ -41,12 +41,12 @@
         letter-spacing: -2px;
         font-size: 80px;
         line-height: 80px;
-        color: $white;
+        color: $black;
         text-transform: uppercase;
         text-align: center;
         &:hover {
-          color: $black;
-          background-color: $white;
+          color: $yellow;
+          background-color: $black;
         }
       }
     }

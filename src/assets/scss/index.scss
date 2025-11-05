@@ -7,6 +7,7 @@
 @use "./components/loader";
 @use "./components/card_fresh";
 @use "./components/card_spin";
+@use "./components/card_skate";
 
 
 // Pages
@@ -22,3 +23,5 @@
 @use "./pages/home/shell-shock";
 @use "./pages/home/fresh";
 @use "./pages/home/spin";
+@use "./pages/home/skate";
+@use "./pages/home/buy";

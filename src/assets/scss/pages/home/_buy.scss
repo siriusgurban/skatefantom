@@ -1,0 +1,18 @@
+@use "../../variables" as *;
+
+.buy {
+  background-color: $pink;
+  .buy_btn {
+    display: inline;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    line-height: 80px;
+    color: $black;
+    &:hover {
+      color: $pink;
+      background-color: $black;
+    }
+  }
+}
