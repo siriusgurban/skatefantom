@@ -36,17 +36,20 @@
       }
 
       .see_more {
-        display: inline;
-        font-weight: 700;
-        letter-spacing: -2px;
-        font-size: 80px;
-        line-height: 80px;
-        color: $white;
-        text-transform: uppercase;
         text-align: center;
-        &:hover {
-          color: $black;
-          background-color: $white;
+        span {
+          display: inline-block;
+          padding: 0 1%;
+          font-weight: 700;
+          letter-spacing: -2px;
+          font-size: 80px;
+          line-height: 80px;
+          color: $white;
+          text-transform: uppercase;
+          &:hover {
+            color: $black;
+            background-color: $white;
+          }
         }
       }
     }

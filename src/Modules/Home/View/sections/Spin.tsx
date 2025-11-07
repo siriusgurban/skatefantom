@@ -37,7 +37,7 @@ function Spin() {
             />
           </div>
           <Link to="/blog" className="see_more">
-            See more
+            <span>See more</span>
           </Link>
         </div>
       </div>

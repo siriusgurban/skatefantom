@@ -24,7 +24,7 @@ function Skate() {
             />
           </div>
           <Link to="/videos" className="see_more">
-            See more
+            <span>See more</span>
           </Link>
         </div>
       </div>
