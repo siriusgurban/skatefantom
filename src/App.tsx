@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <Header />
+        {/* <Header /> */}
         <MyShopRoutes />
-        <Footer />
+        {/* <Footer /> */}
       </Provider>
     </>
   );

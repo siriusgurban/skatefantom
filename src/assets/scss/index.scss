@@ -3,11 +3,15 @@
 
 // Components
 @use "./components/header";
+@use "./components/header_shop";
 @use "./components/footer";
+@use "./components/footer_shop";
 @use "./components/loader";
 @use "./components/card_fresh";
 @use "./components/card_spin";
 @use "./components/card_skate";
+@use "./components/card_fresh_shop";
+
 
 
 // Pages
@@ -18,7 +22,7 @@
 @use "./pages/not-found";
 @use "./pages/cart";
 
-// Sections
+// Sections - Home
 @use "./pages/home/hero";
 @use "./pages/home/shell-shock";
 @use "./pages/home/fresh";
@@ -26,3 +30,4 @@
 @use "./pages/home/skate";
 @use "./pages/home/buy";
 @use "./pages/home/sign";
+

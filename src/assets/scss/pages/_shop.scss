@@ -1,13 +1,23 @@
+@use "../variables" as *;
+
 .shop {
-  padding: 86px 0;
+  padding: 36px 0;
+  background-color: $black;
   .container {
     .row {
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      gap: 30px;
+      gap: 20px;
       padding: 25px 0;
-      .carsBox {
+      .title {
+        align-items: left;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: -2px;
+        color: $white;
+        padding-top: 24px;
+      }
+      .box {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
