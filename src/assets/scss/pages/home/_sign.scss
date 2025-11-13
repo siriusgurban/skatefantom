@@ -5,6 +5,213 @@
   .container {
     .row {
       flex-direction: column;
+      .image {
+        max-width: 100%;
+        padding-bottom: 120px;
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        width: 100%;
+        display: flex;
+        gap: 138px;
+
+        .image {
+          width: 50%;
+          img {
+            max-width: 529.6px;
+            width: 100%;
+          }
+        }
+
+        form {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          gap: 80px;
+
+          input {
+            width: 100%;
+            padding: 16px 0;
+            text-align: left;
+            opacity: 0.4;
+            font-size: 24px;
+            text-transform: uppercase;
+            border: none;
+            border-bottom: 1px solid $white;
+            outline: none;
+            background-color: transparent;
+            color: $white;
+          }
+          /* CSS (drop into your scss or css) */
+          .requiredInp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            user-select: none;
+            // font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+            font-size: 16px;
+            color: #111;
+            position: relative;
+
+            & input {
+              /* keep it in the document flow so :focus works */
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              margin: -1px;
+              padding: 0;
+              border: 0;
+              clip: rect(0 0 0 0);
+              clip-path: inset(50%);
+              overflow: hidden;
+              white-space: nowrap;
+            }
+
+            & .box {
+              width: 28px;
+              height: 28px;
+              display: inline-block;
+              position: relative;
+              flex: 0 0 28px;
+            }
+
+            & .box::before {
+              content: "";
+              position: absolute;
+              inset: 0;
+              border-radius: 50%;
+              border: 2px solid $pink;
+              box-sizing: border-box;
+              transition: border-color 160ms ease, box-shadow 160ms ease;
+              background: transparent;
+            }
+            & .box::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              width: 16px; /* inner circle size */
+              height: 16px;
+              transform: translate(-50%, -50%) scale(0);
+              border-radius: 50%;
+              background: $pink; /* fill color */
+              transition: transform 160ms cubic-bezier(0.2, 0.9, 0.3, 1);
+              will-change: transform;
+            }
+
+            & input:checked + .box::after {
+              transform: translate(-50%, -50%) scale(1);
+            }
+
+            & input:checked + .box::before {
+              border-color: $pink;
+            }
+
+            & input:focus + .box::before {
+              // box-shadow: 0 0 0 6px rgba(34, 99, 255, 0.12);
+              border-color: $pink;
+            }
+
+            & .text {
+              line-height: 1;
+            }
+          }
+
+          .unRequiredInp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            user-select: none;
+            // font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+            font-size: 16px;
+            color: #111;
+            position: relative;
+
+            & input {
+              /* keep it in the document flow so :focus works */
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              margin: -1px;
+              padding: 0;
+              border: 0;
+              clip: rect(0 0 0 0);
+              clip-path: inset(50%);
+              overflow: hidden;
+              white-space: nowrap;
+            }
+
+            & .box {
+              width: 28px;
+              height: 28px;
+              display: inline-block;
+              position: relative;
+              flex: 0 0 28px;
+            }
+
+            & .box::before {
+              content: "";
+              position: absolute;
+              inset: 0;
+              border-radius: 50%;
+              border: 2px solid $pink;
+              box-sizing: border-box;
+              transition: border-color 160ms ease, box-shadow 160ms ease;
+              background: transparent;
+            }
+            & .box::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              width: 16px; /* inner circle size */
+              height: 16px;
+              transform: translate(-50%, -50%) scale(0);
+              border-radius: 50%;
+              background: $pink; /* fill color */
+              transition: transform 160ms cubic-bezier(0.2, 0.9, 0.3, 1);
+              will-change: transform;
+            }
+
+            & input:checked + .box::after {
+              transform: translate(-50%, -50%) scale(1);
+            }
+
+            & input:checked + .box::before {
+              border-color: $pink;
+            }
+
+            & input:focus + .box::before {
+              // box-shadow: 0 0 0 6px rgba(34, 99, 255, 0.12);
+              border-color: $pink;
+            }
+
+            & .text {
+              line-height: 1;
+            }
+          }
+
+          button {
+            border: none;
+            font-weight: 700;
+            letter-spacing: -4px;
+            font-size: 80px;
+            line-height: 80px;
+            color: $pink;
+            text-transform: uppercase;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover {
+              color: $black;
+              background-color: $pink;
+            }
+          }
+        }
+      }
     }
   }
 }

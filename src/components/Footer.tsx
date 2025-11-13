@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/svg/logo.svg?react";
+import LogoFooter from "../assets/images/svg/logo-footer.svg?react";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
             </li>
           </ul>
           <Link to="/">
-            <Logo className="logo" color="#f2695c"/>
+            <LogoFooter className="logo"/>
           </Link>
           <ul className="social">
             <li>
